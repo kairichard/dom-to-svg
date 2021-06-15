@@ -27,6 +27,7 @@
 	],
 	"scripts": {
 		"build": "tsc -p .",
+		"prepare": "npm run build",
 		"watch": "tsc -p . -w",
 		"eslint": "eslint 'src/**/*.ts'",
 		"prettier": "prettier --check '**/*.{yml,ts,json}'",
