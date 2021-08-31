@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "ES2018",
-		"module": "ES2020",
+		"module": "CommonJS",
 		"moduleResolution": "node",
 		"outDir": "lib",
 		"rootDir": "src",
@@ -10,14 +10,16 @@
 		"declaration": true,
 		"declarationMap": true,
 		"esModuleInterop": true,
+    "downlevelIteration": true,
 		"strict": true,
 		"noUnusedLocals": true,
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 		"noUncheckedIndexedAccess": true,
 		"paths": {
-			"*": ["./src/types/*", "./*"],
-		},
+			"*": ["./src/types/*", "./*"]
+		}
 	},
 	"include": ["src/**/*"],
+  "exclude": ["src/test/**/*"]
 }

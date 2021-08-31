@@ -27,6 +27,7 @@
 	],
 	"scripts": {
 		"build": "tsc -p .",
+    "prepare": "npm run build",
 		"watch": "tsc -p . -w",
 		"eslint": "eslint 'src/**/*.ts'",
 		"prettier": "prettier --check '**/*.{yml,ts,json}'",
@@ -106,7 +107,7 @@
 	},
 	"dependencies": {
 		"gradient-parser": "^1.0.2",
-		"postcss": "^8.2.9",
+		"postcss": "^7.0.35",
 		"postcss-value-parser": "^4.1.0"
 	}
 }
